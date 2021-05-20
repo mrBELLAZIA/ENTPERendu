@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="champTitre">#5b39c6</color>
+    <color name="background">#FFFFFF</color>
+    <color name="white_text">#000000</color>
+
+    <color name="couleur1">#002155</color>
+    <color name="couleur2">#FFFF</color>
+    <color name="couleur3">#5b6384</color>
+
+    <color name="trace_a_pied">#FF0000</color>
+    <color name="trace_en_tournee">#0000FF</color>
+</resources>

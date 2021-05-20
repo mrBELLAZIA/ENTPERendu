@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/titre_gestion_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/titreGabarit"
+        android:textSize="@dimen/grand"
+        android:textColor="@color/couleur1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/gabaritet"
+
+            android:textColor="@color/champTitre"
+            android:textSize="@dimen/petit" />
+
+        <RadioGroup
+            android:id="@+id/groupeType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/editVoiture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_3_voiture" />
+
+            <RadioButton
+                android:id="@+id/editFourgonnette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_fourgonnette" />
+
+            <RadioButton
+                android:id="@+id/editCamionnette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_5_camionnette" />
+
+            <RadioButton
+                android:id="@+id/editCamionPorteur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_6_camion_porteur" />
+
+            <RadioButton
+                android:id="@+id/editEnsembleRoutier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_7_ensemble_routier_articul" />
+
+            <RadioButton
+                android:id="@+id/edit2RoueMotorisé"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_8_2_roues_motoris" />
+
+            <RadioButton
+                android:id="@+id/editVelooutri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_9_velo_ou_triporteur_lectrique" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/editAnnule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/annuler" />
+
+        <Button
+            android:id="@+id/editConfirme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/confirmer" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+
+            <SearchView
+                android:id="@+id/searchEtablissement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/couleur2">
+
+            </SearchView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/choix_d_un_tablissement"
+                android:textColor="@color/couleur1"
+                android:textSize="@dimen/moyen" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerEntreprisChoix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/aucunEtablissement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aucun" />
+
+        </LinearLayout>
+
+</LinearLayout>

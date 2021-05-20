@@ -1,0 +1,23 @@
+package com.example.entpe.storage.utility;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import java.util.List;
+
+public interface Storage<T> {
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	// Methods ////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	@Nullable T find(int id);
+	
+	@NonNull List<T> findAll();
+	
+	int size();
+	
+	void insert(@NonNull T newObject);
+	
+	void update(int id, @NonNull T updatedObject);
+	
+	void delete(int id);
+}

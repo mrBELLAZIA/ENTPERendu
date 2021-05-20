@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titre_fin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/fin_de_tournee"
+        android:textSize="@dimen/tresgrand"
+        android:textColor="@color/couleur1" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titre_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lieu_d_arriv_e_du_v_hicule"
+                android:textColor="@color/champTitre"
+                android:textSize="@dimen/moyen" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/codepostalfintext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/pays_ou_code_postal"
+                            android:textColor="@color/champTitre"
+                            android:textSize="@dimen/petit" />
+
+                        <EditText
+                            android:id="@+id/codepostalfin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName"
+                            android:text=""
+                            android:textColor="@color/couleur3"
+                            android:textSize="@dimen/petit"
+                            android:hint="@string/exemplePaysCodepostal"
+                            android:importantForAutofill="no" />
+
+                    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:orientation="horizontal"
+                android:textColor="@color/couleur3"
+                android:textSize="@dimen/petit">
+
+                <TextView
+                    android:id="@+id/nomcomunefintext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/nom_de_la_communeet"
+                    android:textColor="@color/champTitre"
+                    android:textSize="@dimen/petit" />
+
+                <EditText
+                    android:id="@+id/Nomcommunefin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/couleur3"
+                    android:textSize="@dimen/petit"
+                    android:hint="@string/exempleCommune"
+                    android:importantForAutofill="no" />
+
+            </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20dp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/choixlieu"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/etait_ceet"
+                    android:textColor="@color/champTitre"
+                    android:textSize="@dimen/petit" />
+
+                <RadioGroup
+                    android:id="@+id/GroupeChoixNature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/editTransporteur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/votre_domicile" />
+
+                    <RadioButton
+                        android:id="@+id/editPlatformeLogistique"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/un_transporteur" />
+
+                    <RadioButton
+                        android:id="@+id/editPlatformeDistribution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/une_plateforme" />
+
+                    <RadioButton
+                        android:id="@+id/editUsine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/votre_tablissement" />
+
+                    <RadioButton
+                        android:id="@+id/Autres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/autres" />
+
+                    <EditText
+                        android:id="@+id/editAutreChoix"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textColor="@color/couleur3"
+                        android:textSize="@dimen/petit" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tes_vous_arriv_ce_lieu_charg_n_y_compris_emballages_d_chets"
+                    android:textColor="@color/couleur1"
+                    android:textSize="@dimen/pmoyen" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/non"
+                    android:textColor="@color/couleur1"
+                    android:textSize="@dimen/moyen" />
+
+                <Switch
+                    android:id="@+id/estVide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/champTitre"
+                    android:textSize="@dimen/petit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/oui"
+                    android:textColor="@color/couleur1"
+                    android:textSize="@dimen/moyen" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutFin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.025"
+                        android:gravity="center"
+                        android:text="@string/nature_nmarchandise"
+                        android:textColor="@color/champTitre"
+                        android:textSize="@dimen/petit" />
+
+                    <RadioGroup
+                        android:id="@+id/choixNature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10">
+
+                        <RadioButton
+                            android:id="@+id/natAnimaux"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_1_animaux_vivants" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_2_produits_congel_s" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_3_produits_frais_l_gumes_fruits_viandes_poissons_charcuteries_produits" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_4_produits_alimentaires_semi_p_rissables_c_r_ales_sucre_boissons_caf" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_5_produits_agricoles_non_alimentaires_mati_res_textiles_d_chets_bois" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_6_min_raux" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_7_produits_p_troliers" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_8_produits_chimiques_non_dangereux" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_9_produits_chimiques_dangereux" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_10_p_te_papier_et_cellulose" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_11_produits_manufactur_s_non_fragiles" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_12_produits_manufactur_s_fragiles_verre" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_13_emballages_d_chets" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_14_consignes_bouteilles_bonbonnes" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_15_autre" />
+
+                        <EditText
+                            android:id="@+id/autreNature"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text=""
+                            android:autofillHints="" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.025"
+                        android:gravity="center"
+                        android:text="@string/conditionnementset"
+                        android:textColor="@color/champTitre"
+                        android:textSize="@dimen/pmoyen" />
+
+                    <RadioGroup
+                        android:id="@+id/choixCondi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15">
+
+                        <RadioButton
+                            android:id="@+id/condiEnveloppes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_1_enveloppes" />
+
+                        <RadioButton
+                            android:id="@+id/condiCartons"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_2_cartons" />
+
+                        <RadioButton
+                            android:id="@+id/condiCaisse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_3_caisses_bacs" />
+
+                        <RadioButton
+                            android:id="@+id/condiPalettes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_4_palettes" />
+
+                        <RadioButton
+                            android:id="@+id/condiRouleaux"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_5_rouleaux" />
+
+                        <RadioButton
+                            android:id="@+id/condiFut"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_6_f_ts_bonbonnes" />
+
+                        <RadioButton
+                            android:id="@+id/condiCintres"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_7_cintres" />
+
+                        <RadioButton
+                            android:id="@+id/condiVrac"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_8_vrac" />
+
+                        <RadioButton
+                            android:id="@+id/condiBigBag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_9_big_bag" />
+
+                        <RadioButton
+                            android:id="@+id/condiCaisseMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_10_caisses_mobiles_conteneurs" />
+
+                        <RadioButton
+                            android:id="@+id/condiAutre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_11_autre_pr_cisez" />
+
+                        <EditText
+                            android:id="@+id/editAutreCondi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/confirmerFIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmer" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

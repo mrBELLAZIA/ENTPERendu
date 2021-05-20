@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/nature_marchandise"
+                android:textColor="@color/champTitre"
+                android:textSize="@dimen/tresgrand" />
+
+            <RadioGroup
+                android:id="@+id/choixNature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix1" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix2" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix3" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix4" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix5" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix6" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix7" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix8" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix9" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix10" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix11" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix12" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix13" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoix14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureMerchChoix14" />
+
+                <RadioButton
+                    android:id="@+id/natureMerchChoixAutres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Autres" />
+
+                <EditText
+                    android:id="@+id/autreNature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/Précisez"
+                    android:importantForAutofill="no"
+                    android:gravity="center"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>

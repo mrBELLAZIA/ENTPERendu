@@ -1,0 +1,453 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:id="@+id/textView"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:text="@string/initialisation_du_parcours"
+                     android:textColor="@color/couleur1"
+                     android:textSize="@dimen/grand" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:id="@+id/textView25"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:text="@string/d_part_du_v_hicule"
+                     android:textColor="@color/couleur1"
+                     android:textSize="@dimen/moyen" />
+
+             </LinearLayout>
+
+             <Space
+                 android:layout_width="match_parent"
+                 android:layout_height="15dp" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+
+                 <TextView
+                     android:id="@+id/NomChauffeur"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:text="@string/nomet"
+                     android:textColor="@color/champTitre"
+                     android:textSize="@dimen/petit" />
+
+                 <EditText
+                     android:id="@+id/editNomChauffeur"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:ems="10"
+                     android:gravity="center"
+                     android:inputType="textPersonName"
+                     android:hint="@string/exempleNom"
+                     android:importantForAutofill="no"
+                     android:text="" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:id="@+id/paysOuPostal"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:text="@string/pays_ou_code_postal2"
+                     android:textColor="@color/champTitre"
+                     android:textSize="@dimen/petit" />
+
+                 <EditText
+                     android:id="@+id/editPaysOuPostal"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:ems="10"
+                     android:gravity="center"
+                     android:inputType="textPersonName"
+                     android:hint="@string/exemplePaysCodepostal"
+                     android:importantForAutofill="no"
+                     android:textSize="@dimen/petit" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:id="@+id/nomCommune"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:text="@string/commune"
+                     android:textColor="@color/champTitre"
+                     android:textSize="@dimen/petit" />
+
+                 <EditText
+                     android:id="@+id/editNomCommune"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:ems="10"
+                     android:gravity="center"
+                     android:inputType="textPersonName"
+                     android:hint="@string/exempleCommune"
+                     android:importantForAutofill="no"
+                     android:textSize="@dimen/petit" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/lieuChargement"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:id="@+id/textView21"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="0.001"
+                     android:gravity="center"
+                     android:text="@string/nature_du_lieu_de_d_part"
+                     android:textColor="@color/champTitre"
+                     android:textSize="@dimen/petit" />
+
+                 <RadioGroup
+                     android:id="@+id/choixLieu"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1">
+
+                     <RadioButton
+                         android:id="@+id/initDomicile"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="@string/votre_domicile" />
+
+                     <RadioButton
+                         android:id="@+id/initTransporteur"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="@string/un_transporteur" />
+
+                     <RadioButton
+                         android:id="@+id/initPlateForme"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="@string/une_plate_forme" />
+
+                     <RadioButton
+                         android:id="@+id/initEtablissement"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="@string/votre_tablissement" />
+                     <RadioButton
+                         android:id="@+id/autresdepart"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="@string/autres" />
+
+                     <EditText
+                         android:id="@+id/autresdepartext"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:ems="10"
+                         android:inputType="textPersonName"
+                         android:hint="@string/Précisez" />
+
+                 </RadioGroup>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:id="@+id/etablissementChoisi"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="2"
+                         android:gravity="center"
+                         android:text="@string/etablissement_aucunet"
+                         android:textColor="@color/champTitre"
+                         android:textSize="@dimen/petit" />
+
+                     <Button
+                         android:id="@+id/choixEtablissement"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="0.5"
+                         android:text="@string/choisir" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:id="@+id/VehiculeChoisi"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="2"
+                         android:gravity="center"
+                         android:text="@string/v_hicule_aucunet"
+                         android:textColor="@color/champTitre"
+                         android:textSize="@dimen/petit" />
+
+                     <Button
+                         android:id="@+id/choixVehicule"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="0.5"
+                         android:text="@string/choisir" />
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <View
+                 android:id="@+id/divider2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="3pt"
+                 android:background="?android:attr/listDivider" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:id="@+id/textView30"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:text="@string/tes_vous_parti_de_ce_lieu_charg"
+                     android:textColor="@color/couleur1"
+                     android:textSize="@dimen/moyen" />
+
+             </LinearLayout>
+
+             <Space
+                 android:layout_width="match_parent"
+                 android:layout_height="15dp" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="34dp"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:text="@string/non"
+                     android:textColor="@color/couleur1"
+                     android:gravity="right"
+                     android:textSize="@dimen/moyen" />
+
+                 <Switch
+                     android:id="@+id/estVide"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=""
+                     android:textColor="@color/champTitre"
+                     android:textSize="@dimen/petit" />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:text="@string/oui"
+                     android:gravity="left"
+                     android:textColor="@color/couleur1"
+                     android:textSize="@dimen/moyen" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/editChargement"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:id="@+id/chargement"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:text="@string/poids_kg"
+                         android:textColor="@color/champTitre"
+                         android:textSize="@dimen/petit" />
+
+                     <EditText
+                         android:id="@+id/editChargementPoids"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:ems="10"
+                         android:inputType="number"
+                         android:textSize="@dimen/petit"
+                         android:hint="@string/exempledeca"
+                         android:importantForAutofill="no"
+                         android:gravity="center" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:id="@+id/chargementVol"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:text="@string/volume"
+                         android:textColor="@color/champTitre"
+                         android:textSize="@dimen/petit" />
+
+                     <EditText
+                         android:id="@+id/editChargementVolume"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:ems="10"
+                         android:inputType="number"
+                         android:textSize="@dimen/petit"
+                         android:hint="@string/exempledeca"
+                         android:importantForAutofill="no"
+                         android:gravity="center" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:id="@+id/textView19"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="0.5"
+                         android:gravity="center"
+                         android:text="@string/nature_marchandise"
+                         android:textColor="@color/champTitre"
+                         android:textSize="@dimen/petit" />
+
+                     <Button
+                         android:id="@+id/choixNatureMerch"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="0.5"
+                         android:text="@string/choisir" />
+
+                 </LinearLayout>
+
+                 <Space
+                     android:layout_width="match_parent"
+                     android:layout_height="20dp" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:id="@+id/textView20"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="0.5"
+                         android:gravity="center"
+                         android:text="@string/conditionnementsdp"
+                         android:textColor="@color/champTitre"
+                         android:textSize="@dimen/petit" />
+
+                     <Button
+                         android:id="@+id/choixConditionnements"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="0.5"
+                         android:text="@string/choisir" />
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <Button
+                     android:id="@+id/BoutonInit"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:text="@string/commencer" />
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+     </ScrollView>
+
+ </LinearLayout>

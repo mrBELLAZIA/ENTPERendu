@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/titre_gestion_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/titrenatureetablissement"
+        android:textSize="@dimen/grand"
+        android:textColor="@color/couleur1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/nature_de_l_tablissementet"
+                android:textColor="@color/champTitre"
+                android:textSize="@dimen/petit" />
+
+            <RadioGroup
+                android:id="@+id/GroupeChoixNature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/editExploitationAgricole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exploitation_agricole" />
+
+                <RadioButton
+                    android:id="@+id/editArtisanat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artisanat_interventions_d_installation_et_r_parations_diverses" />
+
+                <RadioButton
+                    android:id="@+id/editServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/services_services_la_personne_ou_aux_entreprises" />
+
+                <RadioButton
+                    android:id="@+id/editIndustrie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/industrie_ou_atelier" />
+
+                <RadioButton
+                    android:id="@+id/editCommerceDeGros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commerce_de_gros" />
+
+                <RadioButton
+                    android:id="@+id/editCommerceDeDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commerce_de_d_tail_petit_magasin_ou_h_tellerie_restauration" />
+
+                <RadioButton
+                    android:id="@+id/editGrandeDistribution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grande_distribution" />
+
+                <RadioButton
+                    android:id="@+id/editBureau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activit_s_de_bureau" />
+
+                <RadioButton
+                    android:id="@+id/editScolairesOuHebergement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/etablissements_scolaires_ou_d_h_bergement3" />
+
+                <RadioButton
+                    android:id="@+id/editTransporteurOuLogistique"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transporteur_ou_plateforme_logistique" />
+
+                <RadioButton
+                    android:id="@+id/editAutre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/autre" />
+
+                <EditText
+                    android:id="@+id/editAutreChoix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/Précisez" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/editAnnule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/annuler" />
+
+        <Button
+            android:id="@+id/editConfirme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/confirmer" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

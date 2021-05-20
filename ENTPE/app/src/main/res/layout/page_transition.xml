@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enCours"
+                android:gravity="center"
+                android:textSize="@dimen/tresgrand"
+                android:textColor="@color/champTitre" />
+
+
+            <com.example.entpe.visuel.GifView
+                android:id="@+id/logo"
+                android:layout_width="338dp"
+                android:layout_height="382dp" />
+
+            <Button
+                android:id="@+id/buttonArrets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/Arrete" />
+
+            <Button
+                android:id="@+id/buttonFinTourne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/fin_de_tournee_button" />
+
+        </LinearLayout>
+    </LinearLayout>

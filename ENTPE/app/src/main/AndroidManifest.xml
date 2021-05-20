@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.entpe"
+    android:targetSandboxVersion="1">
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/lm4zyc1a_400x400"
+        android:label="ENqueTPE"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/lm4zyc1a_400x400"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key" />
+
+        <activity android:name=".activity.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <activity android:name=".activity.Initialisation" android:screenOrientation="portrait" />
+        <activity android:name=".activity.ListEntrepriseActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.ListVehiculeActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.FinTournee" android:screenOrientation="portrait" />
+        <activity android:name=".activity.Questionnaire" android:screenOrientation="portrait" />
+        <activity android:name=".activity.EntreArret" android:screenOrientation="portrait" />
+        <activity android:name=".activity.ListArretActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.MapVisualisation" android:screenOrientation="portrait" />
+        <activity android:name=".activity.Parametres" android:screenOrientation="portrait" />
+
+        <service android:name=".service.GpsService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.entpe.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lieuarrets"
+                android:textSize="@dimen/tresgrand"
+                android:textColor="@color/champTitre" />
+
+            <RadioGroup
+                android:id="@+id/groupeTypeLieu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/lieuChoix1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lieuChoix1" />
+
+                <RadioButton
+                    android:id="@+id/lieuChoix2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lieuChoix2" />
+
+                <RadioButton
+                    android:id="@+id/lieuChoix3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lieuChoix3" />
+
+                <RadioButton
+                    android:id="@+id/lieuChoix4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lieuChoix4" />
+
+                <RadioButton
+                    android:id="@+id/lieuChoix5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lieuChoix5" />
+
+
+                <RadioButton
+                    android:id="@+id/lieuChoix7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lieuChoix7" />
+
+                <RadioButton
+                    android:id="@+id/lieuChoix8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lieuChoix8" />
+
+                <RadioButton
+                    android:id="@+id/lieuChoix9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lieuChoix9" />
+
+                <RadioButton
+                    android:id="@+id/lieuChoix10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lieuChoix10" />
+
+                <RadioButton
+                    android:id="@+id/lieuChoix11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lieuChoix11" />
+
+                <RadioButton
+                    android:id="@+id/lieuChoixAutres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Autres" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/Précisez"
+                    android:importantForAutofill="no"
+                    android:gravity="center"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

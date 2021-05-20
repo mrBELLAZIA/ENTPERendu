@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nature"
+                android:textSize="@dimen/tresgrand"
+                android:textColor="@color/champTitre" />
+
+            <RadioGroup
+                android:id="@+id/groupeNatureClient"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/natureChoix1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureChoix1" />
+
+                <RadioButton
+                    android:id="@+id/natureChoix2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureChoix2" />
+
+                <RadioButton
+                    android:id="@+id/natureChoix3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureChoix3" />
+
+                <RadioButton
+                    android:id="@+id/natureChoix4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureChoix4" />
+
+                <RadioButton
+                    android:id="@+id/natureChoix5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureChoix5" />
+
+                <RadioButton
+                    android:id="@+id/natureChoix6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureChoix6" />
+
+                <RadioButton
+                    android:id="@+id/natureChoix7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureChoix7" />
+
+                <RadioButton
+                    android:id="@+id/natureChoix8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureChoix8" />
+
+                <RadioButton
+                    android:id="@+id/natureChoix9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureChoix9" />
+
+                <RadioButton
+                    android:id="@+id/natureChoix10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureChoix10" />
+
+                <RadioButton
+                    android:id="@+id/natureChoix11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natureChoix11" />
+
+                <RadioButton
+                    android:id="@+id/natureChoixAutres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Autres" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/Précisez"
+                    android:importantForAutofill="no"
+                    android:gravity="center" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

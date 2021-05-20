@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manutention"
+            android:textSize="@dimen/tresgrand"
+            android:textColor="@color/champTitre" />
+
+        <RadioGroup
+            android:id="@+id/groupeManutention"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/manutentionchoix1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manutentionchoix1" />
+
+            <RadioButton
+                android:id="@+id/manutentionchoix2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manutentionchoix2" />
+
+            <RadioButton
+                android:id="@+id/manutentionchoix3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manutentionchoix3" />
+
+            <RadioButton
+                android:id="@+id/manutentionchoix4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manutentionchoix4" />
+
+            <RadioButton
+                android:id="@+id/manutentionchoix5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manutentionchoix5" />
+
+            <RadioButton
+                android:id="@+id/manutentionchoix6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manutentionchoix6" />
+
+            <RadioButton
+                android:id="@+id/manutentionchoix7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manutentionchoix7" />
+
+            <RadioButton
+                android:id="@+id/manutentionchoixAutres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Autres" />
+            <EditText
+                android:id="@+id/manutentionEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:gravity="center"
+                android:hint="@string/Précisez"
+                android:importantForAutofill="no" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

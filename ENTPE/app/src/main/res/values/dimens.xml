@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tresgrand">15pt</dimen>
+    <dimen name="grand">12pt</dimen>
+    <dimen name="moyen">10pt</dimen>
+    <dimen name="pmoyen">9pt</dimen>
+    <dimen name="petit">8pt</dimen>
+    <dimen name="plupetit">7pt</dimen>
+    <dimen name="toupiti">6pt</dimen>
+</resources>
